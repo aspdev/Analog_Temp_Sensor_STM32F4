@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"usartconfig\system_stm32f4xx.o"
+"usartconfig\stm32f4xx_hal_dma_ex.o"
+"usartconfig\stm32f4xx_hal_gpio.o"
+"usartconfig\stm32f4xx_hal_pwr_ex.o"
+"usartconfig\stm32f4xx_hal_tim.o"
+"usartconfig\stm32f4xx_hal_dma.o"
+"usartconfig\stm32f4xx_hal_pwr.o"
+"usartconfig\stm32f4xx_hal_rcc.o"
+"usartconfig\stm32f4xx_hal_rcc_ex.o"
+"usartconfig\stm32f4xx_hal_flash.o"
+"usartconfig\stm32f4xx_hal_uart.o"
+"usartconfig\stm32f4xx_hal_tim_ex.o"
+"usartconfig\stm32f4xx_hal_cortex.o"
+"usartconfig\stm32f4xx_hal_flash_ramfunc.o"
+"usartconfig\stm32f4xx_hal_flash_ex.o"
+"usartconfig\stm32f4xx_hal.o"
+"usartconfig\stm32f4xx_hal_adc.o"
+"usartconfig\stm32f4xx_hal_adc_ex.o"
+"usartconfig\stm32f4xx_hal_msp.o"
+"usartconfig\stm32f4xx_it.o"
+"usartconfig\main.o"
+"usartconfig\startup_stm32f446xx.o"
+--library_type=microlib --strict --scatter "UsartConfig\UsartConfig.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UsartConfig.map" -o UsartConfig\UsartConfig.axf
